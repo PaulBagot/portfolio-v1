@@ -13,7 +13,7 @@ export function Header() {
             <div className="relative flex mb-10 w-full flex-col items-start justify-start overflow-hidden">
                 <div className="absolute right-0 left-0 mt-20 flex justify-center z-51">
                     <Avatar>
-                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                        <AvatarImage src="https://github.com/PaulBagot.png" alt="@PaulBagot" />
                         <AvatarFallback>Paul</AvatarFallback>
                     </Avatar>
                 </div>
