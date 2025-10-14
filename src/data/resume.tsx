@@ -191,7 +191,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "",
+        "Partie d'un projet. Un petit ORM en PHP basé sur le même principe qu'Eloquent (ORM de Laravel). le projet contient une pipeline CI / CD pour vérification de la qualité du code et de tests unitaires",
       technologies: [
         "PHP",
         "PHPUnit",
@@ -212,28 +212,21 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Octania Discord Bot",
+      href: "https://github.com/PaulBagot/OctaniaDiscordBot",
+      dates: "2023",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Un bot discord pour le serveur Octania. Il permet, par exemple de jouer de la music dans un canal audio, ajouter des roles à des nouveaux utilisateurs ou encore une modération des échanges textuels.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Javascript",
+        "MongoDB",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/PaulBagot/OctaniaDiscordBot",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",

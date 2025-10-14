@@ -17,9 +17,7 @@ export function Projects() {
                                 Découvrez mes derniers projets
                             </h2>
                             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                I&apos;ve worked on a variety of projects, from simple
-                                websites to complex web applications. Here are a few of my
-                                favorites.
+                                J'ai travaillé sur différents projets assez variés comme des sites web, des applications autonomes ou encore des applications de bureau.
                             </p>
                         </div>
                     </div>
@@ -34,7 +32,7 @@ export function Projects() {
                                 href={project.href}
                                 key={project.title}
                                 title={project.title}
-                                description={project.description}
+                                    description={project.description}
                                 dates={project.dates}
                                 tags={project.technologies}
                                 image={project.image}
