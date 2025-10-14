@@ -44,44 +44,32 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "bgtpaul04@gmail.com",
-    tel: "+33 6 65 16 52 56",
-    social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/PaulBagot",
-        icon: Icons.github,
-
+    social: [
+      {
+        ariaLabel: "GitHub",
+        tooltip: "GitHub",
+        href: "https://github.com/PaulBagot",
+        svgUrl: Icons.github,
+        color: "#0078D7",
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/paul-bagot/",
-        icon: Icons.linkedin,
-
+      {
+        ariaLabel: "LinkedIn",
+        tooltip: "LinkedIn",
+        href: "https://www.linkedin.com/in/paul-bagot/",
+        svgUrl: Icons.linkedin,
+        color: "#0078D7",
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "",
-        icon: Icons.x,
-
-        navbar: false,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "",
-        icon: Icons.youtube,
-        navbar: false,
-      },
-      email: {
-        name: "Send Email",
-        url: "mailto:bgtpaul04@gmail.com",
-        icon: Icons.email,
-
+      {
+        ariaLabel: "Envoyer un email",
+        tooltip: "Envoyer un email",
+        href: "mailto:bgtpaul04@gmail.com",
+        svgUrl: Icons.email,
+        color: "#0078D7",
         navbar: true,
       },
-    },
+    ],
   },
 
   work: [

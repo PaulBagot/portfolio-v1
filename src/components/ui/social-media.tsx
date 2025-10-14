@@ -1,12 +1,14 @@
 import React from 'react';
 import { cn } from "@/lib/utils"; // Assuming you have a utility for class names
+import type { IconProps } from "@/components/icons";
+import type { JSX } from 'react/jsx-runtime';
 
 // Define the type for a single social media item
 export interface SocialItem {
   href: string;
   ariaLabel: string;
   tooltip: string;
-  svgUrl: string; // Changed from svgPath to svgUrl
+  svgUrl: (props : IconProps) => JSX.Element;
   color: string; // Color for customization
 }
 
@@ -46,11 +48,9 @@ const SocialTooltip = React.forwardRef<HTMLUListElement, SocialTooltipProps>(
                 className={cn(baseFilledStyles)}
                 style={{ backgroundColor: item.color }}
               />
-              <img
-                src={item.svgUrl}
-                alt={item.ariaLabel}
-                className={cn(baseSvgStyles)}
-              />
+            <div className={cn(baseSvgStyles)}>
+              {item.svgUrl({})}
+            </div>
             </a>
             <div
               className={cn(baseTooltipStyles)}
