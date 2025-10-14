@@ -143,10 +143,11 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "",
+        "Une application de dessin ressemblant à paint, créée pendant mes études avec la technologie JavaFX.",
       technologies: [
         "Java",
-        "JavaFX"
+        "JavaFX",
+        "Maven",
       ],
       links: [
         {
@@ -160,31 +161,24 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Site de Plongées",
+      href: "",
+      dates: "2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Projet de fin d’études du BUT Informatique. " 
+        + "Site web de réservation de plongées en mer avec différents rôles se connectant au site afin de réserver, créer, gérer des plongées.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "ReactJS",
+        "API REST",
+        "Laravel",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "MySQL",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -192,33 +186,26 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Mini ORM",
+      href: "#",
+      dates: "2025",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "PHP",
+        "PHPUnit",
+        "Docker",
+        "Gitlab CI",
+        "SonarQube",
+        "Nginx",
+        "Pipeline CI / CD",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
+          href: "https://gitlab.com/octania/site-octania/-/tree/6-mini-ORM?ref_type=heads",
+          icon: <Icons.gitlab className="size-3" />,
         },
       ],
       image: "",
