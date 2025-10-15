@@ -1,6 +1,11 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+import projectGribouille from "@/assets/gribouille.png"
+import projectORM from "@/assets/ORM.png"
+import projectDiscord from "@/assets/octania-discord-bot.png"
+import projectSnake from "@/assets/snake.png"
+
 export const DATA = {
   name: "Paul BAGOT",
   initials: "PB",
@@ -144,9 +149,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: projectGribouille,
+      video: "",
     },
     {
       title: "Site de Plongées",
@@ -157,7 +161,7 @@ export const DATA = {
         "Projet de fin d’études du BUT Informatique. " 
         + "Site web de réservation de plongées en mer avec différents rôles se connectant au site afin de réserver, créer, gérer des plongées.",
       technologies: [
-        "ReactJS",
+        "Java",
         "API REST",
         "Laravel",
         "TailwindCSS",
@@ -170,8 +174,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: projectSnake,
+      video: "",
     },
     {
       title: "Mini ORM",
@@ -196,8 +200,8 @@ export const DATA = {
           icon: <Icons.gitlab className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: projectORM,
+      video: "",
     },
     {
       title: "Octania Discord Bot",
@@ -217,9 +221,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: projectDiscord,
+      video: "",
     },
   ],
 } as const;
