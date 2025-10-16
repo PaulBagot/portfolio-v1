@@ -23,7 +23,6 @@ export const ResumeCard = ({
   altText,
   title,
   subtitle,
-  href,
   badges,
   period,
   description,
