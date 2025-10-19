@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: apt install npm
+      - run: npm ci
+      - run: docker login -u ${{ secrets.DOCKER_LOGIN}} -p ${{ secrets.DOCKER_PWD}} ${{ secrets.DOCKER_SERVER}}
+      - run: docker build -t ${{ secrets.DOCKER_SERVER}}/${{ secrets.DOCKER_LOGIN}}/portfolio-v1 .
+      - run: docker push ${{ secrets.DOCKER_SERVER}}/${{ secrets.DOCKER_LOGIN}}/portfolio-v1
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir -p ~/.ssh/
+      - run: echo "${{ secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+      - run: cat ~/.ssh/id_rsa
+      - run: chmod 600 ~/.ssh/id_rsa
+      - run: ssh-keyscan -p ${{ secrets.VPS_SSH_PORT}} -H ${{ secrets.VPS_HOST}} > ~/.ssh/known_hosts
+      - run: |
+          ssh ${{ secrets.VPS_USER}}@${{ secrets.VPS_HOST}} -p ${{ secrets.VPS_SSH_PORT}} "
+            docker login -u ${{ secrets.DOCKER_LOGIN}} -p ${{ secrets.DOCKER_PWD}} ${{ secrets.DOCKER_SERVER}}
+            docker pull ${{ secrets.DOCKER_SERVER}}/${{ secrets.DOCKER_LOGIN}}/portfolio-v1
+          "
