@@ -31,4 +31,6 @@ jobs:
           ssh ${{ secrets.VPS_USER}}@${{ secrets.VPS_HOST}} -p ${{ secrets.VPS_SSH_PORT}} "
             docker login -u ${{ secrets.DOCKER_LOGIN}} -p ${{ secrets.DOCKER_PWD}} ${{ secrets.DOCKER_SERVER}}
             docker pull ${{ secrets.DOCKER_SERVER}}/${{ secrets.DOCKER_LOGIN}}/portfolio-v1
+            cd /srv/website/
+            docker compose up -d --force-recreate --no-deps portfolio-react
           "
