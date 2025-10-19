@@ -153,19 +153,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Site de Plongées",
+      title: "Jeu du Snake",
       href: "",
-      dates: "2025",
+      dates: "2023",
       active: true,
       description:
-        "Projet de fin d’études du BUT Informatique. " 
-        + "Site web de réservation de plongées en mer avec différents rôles se connectant au site afin de réserver, créer, gérer des plongées.",
+        "Mini projet fait pendant mon temps libre. " 
+        + "Petit jeux du snake qui marche avec les flèches du clavier ou des boutons sur téléphone. J'ai impémenté un système de points.",
       technologies: [
-        "Java",
-        "API REST",
-        "Laravel",
-        "TailwindCSS",
-        "MySQL",
+	"HTML",
+	"CSS",
+        "JavaScript",
       ],
       links: [
         {
