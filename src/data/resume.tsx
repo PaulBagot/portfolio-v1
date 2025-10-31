@@ -168,7 +168,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "#",
+          href: "https://github.com/PaulBagot/Snake",
           icon: <Icons.github className="size-3" />,
         },
       ],
